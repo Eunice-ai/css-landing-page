@@ -13,13 +13,17 @@
     height: 100%;
     background-position: center;
     padding-bottom: 15rem;
+    
+
 }
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     padding-inline: 3.5rem;
     padding-block: 3rem;
+    
 }
 
 .nav-lists {
@@ -82,6 +86,18 @@ span.menu-span {
 .hero-page-div {
     margin-top: 6rem;
     text-align: center;
+    animation-name: slideup;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideup {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .hero-paragraph {
